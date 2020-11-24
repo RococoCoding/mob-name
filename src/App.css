@@ -46,7 +46,145 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+body {
+  background-color: #590000;
+  font-size: 1.8rem;
+  width: 100%;
+  color: white;
+}
+.bg {
+  z-index: -1;
+  position: fixed;
+  width: 50%;
+  margin: auto 0 auto 50%;
+}
+/* #region form */
+form {
+  width: 50%;
+  margin: 2% 5%;
+  padding: 15% 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
 
+h1 {
+  font-size: 2.5rem;
+  margin: 0 0 4% 0;
+  color: white;
+}
 input {
-  margin-left: 2%;
+  margin-bottom: 4%;
+}
+button {
+  display: block;
+  width: max-content;
+  background-color: black;
+  color: white;
+  padding: 2% 3%;
+  border-radius: 5px;
+}
+/* #endregion form */
+/* #region results */
+.results {
+  width: 50%;
+  margin-left: 5%;
+}
+
+.results span {
+  text-transform: capitalize;
+  color: white;
+  font-weight: bold;
+}
+
+.share {
+  margin-top: 2%;
+  display: flex;
+}
+
+.share button {
+  margin: 0 0 0 2%;
+  padding: 0;
+  width: 15%;
+}
+.tweet {
+  width: 100%;
+}
+
+/* #endregion results */
+small {
+  font-size: .8rem;
+  position: fixed;
+  top: 95%;
+  left: 4%;
+}
+
+@media only screen and (max-width: 875px) {
+  .bg {
+    width: 100%;
+    margin: 0;
+  }
+  form {
+    margin: 0 0 3% 25%;
+    width: 75%;
+  }
+  h1 {
+    display: inline-block;
+  }
+  form button {
+    margin: 0 17%;
+    background-color: #590000;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1%;
+  }
+  .results {
+    margin-left: 25%;
+    width: 75%;
+  }
+  .tweet {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 1.3rem;
+  }
+  .bg {
+    margin: 20% 0 0 0;
+  }
+  form {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  form button {
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 10% 0;
+  }
+  input {
+    width: 40%;
+  }
+  label {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .results {
+    width: 100%;
+    margin: 5% 0;
+    text-align: center;
+  }
+  .share {
+    justify-content: center;
+    margin: 5% auto;
+    flex-direction: column;
+  }
+  .share button {
+    margin: 3% auto;
+    width: 30%;
+  }
 }
