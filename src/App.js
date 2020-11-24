@@ -66,6 +66,7 @@ function App() {
           name="name"
           value={name}
           onChange={changeHandler}
+          required
         />
         </label>
         <button>Get your mob name!</button>
